@@ -44,13 +44,13 @@ body{
   font-size: 14pt;
   margin: 0px;
   font-family: 'Lato', sans-serif;
-  height: 100%;
+  /* height: 100%; */
 
 }
 
 canvas{
   position: absolute;
-  height: calc(100% + 200px);
+  height: calc(100% + 1110px);
   Width: 100%;
   top: 0;
   left: 0;
@@ -60,9 +60,14 @@ canvas{
 h1{
 
   margin-block-start: 0em;
-  font-family: 'GrandSlang';
+  font-family: 'GrandSlang-B-Side';
   font-size: 32pt;
   font-weight: regular;
+  color: #4C4C4D;
+}
+h1 em{
+font-family: 'GrandSlang-Italic';
+
 }
 
 h2{
@@ -143,6 +148,7 @@ a{
   position: absolute;
   left:50%;
   top:40px;
+  clear: black;
   transform: translateX(-50%);
   border-radius:50px;
   padding: 15px 25px;
@@ -152,4 +158,191 @@ a{
   -webkit-box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.5);
   box-shadow:         inset 0 2px 10px rgba(0, 0, 0, 0.5);
 
+}
+
+.contentContainer{
+  margin: auto;
+  max-width: 1000px;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  padding-bottom: 200px;
+}
+
+.contentContainer > div{
+  display: inline-block;
+}
+
+/* text formating */
+.text{
+  width: 700px;
+  margin-bottom: 25px;
+}
+.text a{
+  font-weight: bold;
+  font-family: 'Space Grotesk', 'Lato', sans-serif;
+}
+.quote{
+  margin-inline-start:50px;
+    width: 650px;
+    /* margin-top: 10px; */
+    margin-bottom: 25px;
+}
+
+.imgContainer{
+    margin: 100px 0 125px 0;
+      width: 800px;
+      float: right;
+}
+.imgContainer img{
+}
+#pullout{
+  width: 750px;
+}
+#fourdrawings{
+  height: 300px;
+  float: right;
+  -moz-box-shadow:   3px 3px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow:    3px 3px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08);
+  box-shadow:  3px 3px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08);
+}
+
+/* hoverstates */
+.text a:hover{
+  font-style:italic;
+  text-decoration: underline;
+  background-color: #9DB5F3;
+}
+
+.interactive:hover{
+  -moz-box-shadow:   0 0px 15px 5px #9DB5F3, 0 0 20px 3px #9DB5F3, 0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow:  0 0px 15px 5px #9DB5F3, 0 0 20px 3px #9DB5F3, 0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
+  box-shadow:  0 0px 15px 5px #9DB5F3, 0 0 20px 3px #9DB5F3, 0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* media queries */
+@media  (max-width:1300px){
+    .contentContainer{
+      margin-left: 150px;
+      margin-right: 150px;
+  }
+}
+
+@media  (max-width:1125px){
+    .contentContainer{
+      margin-left: 150px;
+      margin-right: 150px;
+  }
+      .text{
+      width: 500px;
+    }
+      .quote{
+      width: 450px;
+    }
+      .imgContainer{
+      width: 600px;
+    }
+      #pullout{
+      width: 550px;
+    }
+
+      #fourdrawings{
+      height: 250px;
+    }
+}
+
+@media  (max-width:900px){
+    .imgContainer{
+      float: none;
+  }
+      .imgContainer{
+      width: 500px;
+    }
+      #pullout{
+      width: 450px;
+      margin-bottom: 10px;
+    }
+    h1{
+      font-size: 24pt;
+    }
+}
+
+@media  (max-width:800px){
+      .text{
+      width: 450px;
+    }
+      .quote{
+      width: 400px;
+    }
+      .imgContainer{
+      width: 450px;
+    }
+      #pullout{
+      margin-bottom: 25px;
+    }
+}
+
+@media  (max-width:750px){
+    .contentContainer{
+      width: 65%;
+      margin: auto;
+      margin-top: 150px;
+  }
+      .text{
+      width: auto;
+    }
+      .quote{
+      width: auto;
+    }
+      .imgContainer{
+      width: auto;
+    }
+      #pullout{
+      width: 100%;;
+    }
+}
+
+@media  (max-width:600px){
+  body{
+    font-size: 12pt;
+  }
+  h1{
+    font-size: 18pt;
+  }
+}
+
+
+@media  (max-width:450px){
+      .quote{
+        margin-inline-start: 15px;
+    }
+    .contentContainer{
+      width: 300px;
+      margin: auto;
+      margin-top: 150px;
+      box-sizing: border-box;
+      padding-right: 50px;
+    }
+      body{
+        font-size: 10pt;
+      }
+      h1{
+        font-size: 14pt;
+      }
+}
+
+@media  (max-width:350px){
+  .contentContainer{
+    width: 300px;
+    margin: auto;
+    margin-top: 150px;
+    box-sizing: border-box;
+    padding-right: 25px;
+  }
+  .nav{
+    right: 25px;
+      top: 25px;
+  }
+  .dailydose{
+    top: 25px;
+  }
 }
