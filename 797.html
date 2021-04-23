@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>797 | Daily Dose</title>
+
+    <!-- import the webpage's stylesheet -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="797.css">
+
+    <!-- import the webpage's javascript file -->
+    <script src="797.js" defer></script>
+  </head>
+  <body>
+    <!-- loading screen  -->
+    <div class="loading-container">
+      <div class="loader">
+        Loading...
+      </div>
+    </div>
+
+
+
+ <!-- close button -->
+  <div class="nav">
+     <div class="interactive  close option">
+       <div class="option">
+         X
+       </div>
+      </div>
+
+  </div>
+
+<!-- too narrow popup-->
+<div class="tooNarrow">
+  <h1 class="narrowText">
+    Your browser window is too narrow.
+  </h1>
+</div>
+
+<!-- exit popup-->
+    <div class="exit hidden" id="exit">
+      <div class="popup" id="pop">
+        <h2>Are you sure you want to leave this page?</h2>
+        Leaving now means you will  lose all your progress on this wall drawing.
+
+            <div class="controlBottom">
+
+                <div class="button cancel">
+                  cancel
+                </div>
+
+                <a href="index.html" class="button">
+                  leave page
+                </a>
+            </div>
+      </div>
+    </div>
+
+    <!-- instructions -->
+     <div class="instructions">
+       <div class="bar">
+                 <p class="minimize">
+                        X
+
+                 </p>
+         </div>
+         <div class="instructionsMargin">
+                        <h1>
+                          Wall Drawing 797
+                        </h1>
+                      <div>
+                            <strong>You'll be the first drafter,</strong> and we'll be the rest.
+                            Draw the first line and <strong>we will copy it once you go click the "copy" button</strong> in the lower left corner.
+                            <strong>When you are done, click the "I'm done!" button</strong> in the lower right hand corner to see your final drawing!
+                          </div>
+                        <ol class="steps">
+                          <div>
+                            Sol Lewitt's instructions:
+                          </div>
+                            <ul><strong>The first drafter has a <strong class="black">black marker</strong> and makes an irregular horizontal line near the top of the wall.</strong>
+                            Then the second drafter tries to copy it (without touching it) using a <strong class="red">red marker.</strong>
+                            The third drafter does the same, using a <strong class="yellow">yellow marker.</strong>
+                            The fourth drafter does the same using a <strong class="blue">blue marker.</strong>
+                            Then the <strong class="red">second drafter</strong> followed by the
+                              <strong class="yellow">third</strong> and <strong class="blue">fourth</strong>
+                              copies the last line drawn until the bottom of the wall is reached.
+                            </ul>
+                            <small>Source: <em>Name of source</em></small>
+
+
+
+                        </ol>
+              </div>
+
+
+        </div>
+
+
+ <!-- main page -->
+    <canvas></canvas>
+
+
+
+
+ <!-- bottom -->
+    <footer>
+
+ <!-- tools -->
+      <div class="tools">
+
+                      <div class="instructionsPopup active">
+
+                          instructions  -
+
+                      </div>
+
+              <div class=" divider"></div>
+
+
+                  <!-- <div class="color chosen" id="black">
+                    <div class="buttonExpansion"></div>
+                  </div>
+
+        <div class="padding"></div> -->
+
+
+        <!-- <div class="padding"></div> -->
+
+                <div class="toolSection">
+                    <div id="undo">
+                      <svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 87.43 71.57"><defs><style>.cls-1,.cls-2{stroke:#000;stroke-linecap:round;stroke-width:3px;}.cls-1{stroke-linejoin:round;}.cls-2{fill:none;stroke-miterlimit:10;}</style></defs><path class="cls-1" d="M541.27,1183.69h30c-3.15-3.92-7.85-12.81,4.26-19.8-12.12,7-17.46-1.52-19.28-6.22h0Z" transform="translate(-539.77 -1156.17)"/><path class="cls-2" d="M575.57,1163.89a33.41,33.41,0,1,1-12.23,45.64" transform="translate(-539.77 -1156.17)"/></svg>
+                    </div>
+                  <div class="padding">
+
+                  </div>
+                  <div id="redo">
+                    <svg id="Layer_4" data-name="Layer 4" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 87.43 71.57"><defs><style>.cls-1,.cls-2{stroke:#000;stroke-linecap:round;stroke-width:3px;}.cls-1{stroke-linejoin:round;}.cls-2{fill:none;stroke-miterlimit:10;}</style></defs><path class="cls-1" d="M625.7,1183.69H595.65c3.15-3.92,7.86-12.81-4.26-19.8,12.12,7,17.46-1.52,19.28-6.22h0Z" transform="translate(-539.77 -1156.17)"/><path class="cls-2" d="M591.39,1163.89a33.41,33.41,0,1,0,12.23,45.64" transform="translate(-539.77 -1156.17)"/></svg>
+                  </div>
+
+                </div>
+
+                <div class="padding"></div>
+
+
+                  <div class="toolSection" id="clear">
+                    clear
+                  </div>
+
+                <div class=" divider"></div>
+                    <div class="toolSection" id="copy">
+                      copy
+                    </div>
+          </div>
+
+
+
+
+
+ <!-- nav page -->
+              <div class="bottomNav">
+
+                  <div class="howTo" >
+                    ?
+
+                    <div class="canvasDirections hidden" >
+                      Click and drag your cursor across the canvas to draw.<br><br>
+                      You can drag the instructions to the side, or minimize them when you want to get them out of the way.
+                    </div>
+                  </div>
+                <div class="padding"></div>
+
+                  <div class="button" id="download">
+                    download
+                  </div>
+                <div class="padding">
+
+                </div>
+                  <a href="comparison797.html" class="button" id="finish">
+                    I'm done!
+                  </a>
+              </div>
+
+    </footer>
+
+
+
+  </body>
+</html>
