@@ -32,7 +32,6 @@ $(document).ready(function(){
 
     })
 
-
       let md = true;
       let canvas = document.getElementById('canvas');
       let body = document.getElementById('body');

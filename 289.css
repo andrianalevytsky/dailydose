@@ -699,6 +699,13 @@ footer{
   cursor: move;
 }
 
+
+
+small a:hover{
+  text-decoration: underline;
+  font-style: italic;
+}
+
 /* circle hover */
 .scaleUp{
   transform: scale(.8,.8);

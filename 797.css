@@ -704,6 +704,11 @@ footer{
 }
 
 
+
+small a:hover{
+  text-decoration: underline;
+  font-style: italic;
+}
 /* responsiveness */
 
 /* narrow pop up formatting */

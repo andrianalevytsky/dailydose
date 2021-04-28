@@ -262,7 +262,12 @@ margin-bottom: 5px;
     #post1151{
       margin-bottom: 40px;
     }
+    canvas{
+      height: calc(100% + 300px);
+    }
   }
+
+
   @media  (max-width:851px){
     #post1151{
       margin-bottom: 0px;
@@ -282,6 +287,17 @@ margin-bottom: 5px;
     }
     .textContainer{
       height: 100%;
+    }
+    canvas{
+      height: calc(100% + 500px);
+    }
+  }
+  @media  (max-width:525px){
+    .textContainer{
+      height: calc(100% + 300px)
+    }
+    canvas{
+      height: calc(100% + 500px);
     }
   }
 

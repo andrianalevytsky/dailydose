@@ -720,6 +720,11 @@ box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08)
 }
 
 
+small a:hover{
+  text-decoration: underline;
+  font-style: italic;
+}
+
 /* circle hover */
 .scaleUp{
   transform: scale(.8,.8);
