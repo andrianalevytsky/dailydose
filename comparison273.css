@@ -44,13 +44,14 @@ html{
 body{
   font-size: 14pt;
   margin: 0px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'aktiv-grotesk', 'neue-haas-unica', sans-serif;
   white-space: nowrap;
   overflow-x: scroll;
 }
 
+
 canvas{
-  position: absolute;
+  position: fixed;
   height: 100%;
   Width: 100%;
   top: 0;
@@ -80,22 +81,22 @@ a{
 }
 
 .interactive{
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk', 'aktiv-grotesk', sans-serif;
 }
 
 
 .button{
   display: inline-block;
-  border-style: solid;
   border-width: 1px;
   padding: 10px 20px;
   border-radius: 50px;
   margin-top: 20px;
-  -moz-box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
-  box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0px 5px 1px rgb(0 0 0 / 20%), 0 0.5px 5px 0 rgb(0 0 0 / 8%), 0 .5px 3px 0px rgb(0 0 0 / 80%), inset 0 5px 2px 1px #ffffff, inset 0 -2px 3px 1px rgb(0 0 0 / 10%);
+  -webkit-box-shadow:  0 0px 5px 1px rgb(0 0 0 / 20%), 0 0.5px 5px 0 rgb(0 0 0 / 8%), 0 .5px 3px 0px rgb(0 0 0 / 80%), inset 0 5px 2px 1px #ffffff, inset 0 -2px 3px 1px rgb(0 0 0 / 10%);
+  box-shadow:  0 0px 5px 1px rgb(0 0 0 / 20%), 0 0.5px 5px 0 rgb(0 0 0 / 8%), 0 .5px 3px 0px rgb(0 0 0 / 80%), inset 0 5px 2px 1px #ffffff, inset 0 -2px 3px 1px rgb(0 0 0 / 10%);
   background-color: #FAFAFA;
   font-family: 'Space Grotesk', sans-serif;
+  cursor: pointer;
 
 }
 
@@ -109,16 +110,15 @@ a{
   vertical-align: top;
   box-sizing: border-box;
     display: inline-block;
-    border-style: solid;
     border-width: 1px;
     width: 45px;
   height: 45px;
     text-align: center;
     border-radius: 50px;
   position: relative;
-  -moz-box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
-  box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), 0 .5px 3px 0px rgb(0 0 0 / 80%), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), 0 .5px 3px 0px rgb(0 0 0 / 80%), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
+  box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), 0 .5px 3px 0px rgb(0 0 0 / 80%), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
   background-color: #FAFAFA;
   margin-top: 20px;
 }
@@ -136,15 +136,14 @@ a{
 }
 .nav a{
   display: inline-block;
-  border-style: solid;
   border-color: black;
   border-width: 1px;
   border-radius: 100%;
   width: 40px;
   height: 40px;
-  -moz-box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
-  box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), 0 .5px 3px 0px rgb(0 0 0 / 100%), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), 0 .5px 3px 0px rgb(0 0 0 / 100%), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
+  box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), 0 .5px 3px 0px rgb(0 0 0 / 100%), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
   background-color: #FAFAFA;
 
 }
@@ -200,7 +199,7 @@ a{
 img{
   height:100%;
   -moz-box-shadow:   3px 3px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08);
-  -webkit-box-shadow:    3px 3px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow:   3px 3px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08) ;
   box-shadow:  3px 3px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08);
 }
 
@@ -227,7 +226,7 @@ img{
   margin-top: 20px;
   white-space: normal;
   font-size: 12pt;
-  width: 461px;
+  width:477px;
 }
 
 

@@ -43,7 +43,7 @@ html{
 body{
   font-size: 14pt;
   margin: 0px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'aktiv-grotesk', 'neue-haas-unica', sans-serif;
   /* height: 100%; */
 
 }
@@ -96,7 +96,7 @@ a{
   -webkit-box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
   box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
   background-color: #FAFAFA;
-  font-family: 'Space Grotesk', 'Lato', sans-serif;
+  font-family: 'Space Grotesk', 'aktiv-grotesk', 'neue-haas-unica', sans-serif;
 
 
 
@@ -116,15 +116,15 @@ a{
 }
 .nav a{
   display: inline-block;
-  border-style: solid;
+  /* border-style: solid; */
   border-color: black;
   border-width: 1px;
   border-radius: 100%;
   width: 40px;
   height: 40px;
-  -moz-box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
-  box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), 0 .5px 3px 0px rgb(0 0 0 / 100%), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), 0 .5px 3px 0px rgb(0 0 0 / 100%), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
+  box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), 0 .5px 3px 0px rgb(0 0 0 / 100%), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
   background-color: #FAFAFA;
 
 }
@@ -179,7 +179,7 @@ a{
 }
 .text a{
   font-weight: bold;
-  font-family: 'Space Grotesk', 'Lato', sans-serif;
+  font-family: 'Space Grotesk', 'aktiv-grotesk', 'neue-haas-unica', sans-serif;
 }
 .quote{
   margin-inline-start:50px;

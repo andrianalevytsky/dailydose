@@ -43,7 +43,7 @@ html{
 body{
   font-size: 14pt;
   margin: 0px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'aktiv-grotesk', 'neue-haas-unica', sans-serif;
   height: 100%;
 
 }
@@ -76,9 +76,14 @@ a{
 }
 
 .interactive{
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk', 'aktiv-grotesk', 'neue-haas-unica', sans-serif;
 }
 
+.interactive:hover{
+  -moz-box-shadow:   0 0px 15px 5px #9DB5F3, 0 0 20px 3px #9DB5F3, 0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow:  0 0px 15px 5px #9DB5F3, 0 0 20px 3px #9DB5F3, 0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
+  box-shadow:  0 0px 15px 5px #9DB5F3, 0 0 20px 3px #9DB5F3, 0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
+}
 
 .button{
   display: inline-block;
@@ -91,7 +96,7 @@ a{
   -webkit-box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
   box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
   background-color: #FAFAFA;
-  font-family: 'Space Grotesk', 'Lato', sans-serif;
+  font-family: 'Space Grotesk', 'aktiv-grotesk', 'neue-haas-unica', sans-serif;
 
 
 
@@ -111,18 +116,19 @@ a{
 }
 .nav a{
   display: inline-block;
-  border-style: solid;
+  /* border-style: solid; */
   border-color: black;
   border-width: 1px;
   border-radius: 100%;
   width: 40px;
   height: 40px;
-  -moz-box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
-  box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08),  0 .5px 3px 0px rgb(0 0 0 / 100%), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08),  0 .5px 3px 0px rgb(0 0 0 / 100%), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
+  box-shadow:  0 0px 5px 1px rgba(0, 0, 0, 0.2), 0 0.5px 5px 0 rgba(0, 0, 0, 0.08),  0 .5px 3px 0px rgb(0 0 0 / 100%), inset 0 5px 2px 1px #FFFFFF, inset 0 -2px 3px 1px rgba(0, 0, 0, 0.1);
   background-color: #FAFAFA;
 
 }
+
 .nav a div{
   position: relative;
   top: 50%;
@@ -222,6 +228,7 @@ text-indent: -15px;
 color: #707070;
 margin-bottom: 5px;
 font-style: italic;
+line-height: 1.1;
 }
 .text strong{
   font-size: 10pt;
@@ -232,6 +239,7 @@ font-style: italic;
 .title{
 font-size: 10pt;
 margin-bottom: 5px;
+line-height: 1.1;
 }
 
 

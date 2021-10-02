@@ -78,24 +78,46 @@ window.addEventListener('load', () =>{
         };
       }
       function draw(canvas, posx, posy){
-        if(md){
+          if(md){
 
-           context.fillStyle = `rgba(218, 247, 166, 1)`;
-          context.beginPath();
-          context.arc(posx, posy,20,0,2*Math.PI);
-           context.fillStyle = `rgba(218, 247, 166, 1)`;
-          context.fill();
 
-             // context.fillRect(posx, posy, 4, 4);
-              }
-        }
 
-    function fadeOut() {
-        context.fillStyle = "rgba(255,255,255,0.1)";
-        context.fillRect(0, 0, canvas.width, canvas.height);
-        setTimeout(fadeOut,50);
-    }
+            context.beginPath();
 
-    fadeOut();
+            //define gradient
+            var radgrad = context.createRadialGradient(posx, posy, 0, posx, posy,100);
+            radgrad.addColorStop(0, 'rgba(218, 247, 166,.75)');
+            radgrad.addColorStop(0.5, 'rgba(218, 247, 166,.25)');
+            radgrad.addColorStop(1, 'rgba(218, 247, 166,0)');
+
+            // draw circle
+            context.fillStyle = radgrad;
+            context.arc(posx, posy,160,0,2*Math.PI);
+            context.fill();
+
+                }
+          }
+
+
+      function fadeOut() {
+          context.fillStyle = "rgba(255,255,255,0.1)";
+          context.fillRect(0, 0, canvas.width, canvas.height);
+          setTimeout(fadeOut,250);
+      }
+
+      fadeOut();
+
+
+
+      //clear canvas after mouse inactivity
+      var timer;
+      $(document).on('mousemove', function(e){
+         clearTimeout(timer);
+
+         timer = setTimeout(function() {
+             context.clearRect(0, 0, canvas.width, canvas.height);
+         }, 500);
+      });
+
 });
 });
